@@ -1,8 +1,11 @@
 from function_mod import file_open_w, file_open_r
 
+import time
+
+print("today date is " + time.strftime("%Y/%m/%d"))
 
 while True:
-    user_action = input("Type add, show, edit, complete or exit:")
+    user_action = input("ype add, show, edit, complete or exit:")
     user_action = user_action.strip()
 
     if user_action.startswith("add"):
